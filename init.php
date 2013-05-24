@@ -35,7 +35,7 @@ class Af_Gunnerkrigg extends Plugin {
 					foreach ($entries as $entry) {
 
 						if (preg_match("/(.*\/comics\/.*)/i", $entry->getAttribute("src"), $matches)) {
-							$entry->setAttribute("src","http://www.gunnerkrigg.com".$entry->getAttribute("src")) //The image URL on the site does not contain a domain component, only a path
+							$entry->setAttribute("src","http://www.gunnerkrigg.com".$entry->getAttribute("src")); //The image URL on the site does not contain a domain component, only a path
 							$basenode = $entry;
 							break;
 						}
